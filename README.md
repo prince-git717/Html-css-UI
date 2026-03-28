@@ -10,4 +10,8 @@ A collection of mini projects built using HTML and CSS to practice layouts, styl
 <img width="1920" height="895" alt="Screenshot (370)" src="https://github.com/user-attachments/assets/b678a754-abd3-4fd5-a652-10b5684ff8c9" />
 5th Doll-project
 <img width="1920" height="916" alt="Screenshot (371)" src="https://github.com/user-attachments/assets/69903898-3b35-4c91-a97f-f2db85650aec" />
+6th itachi-web-port
+<img width="1920" height="916" alt="Screenshot (372)" src="https://github.com/user-attachments/assets/528b306d-1ba9-4be1-932a-0a8b494b7391" />
+
+
 
