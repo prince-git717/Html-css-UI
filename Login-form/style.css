@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/itachi.jpeg);
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.1);
+    width: 300px;
+    height: 330px;
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+
+}
+
+.box:hover {
+    box-shadow: 2px 2px 2px 2px rgb(242, 254, 243);
+}
+
+h1 {
+    text-align: center;
+    font-weight: 800;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    color: #908c8c;
+
+}
+
+.saman {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.saman input {
+    font-size: 20px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 20px;
+}
+
+.saman input:focus {
+    outline: none;
+    border: 2px solid rgb(33, 98, 251);
+}
+
+input::placeholder {
+    font-size: 14px;
+    color: gray;
+}
+
+button {
+    font-size: 20px;
+    height: 40px;
+    text-align: center;
+    width: 265px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease-out;
+    color: rgb(36, 34, 34);
+}
+
+button:hover {
+    transform: scale(1.02);
+    background-color: #fff;
+}
+
+@media (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        background-image: url(itachi.jpeg);
+        background-position: center;
+    }
+
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        backdrop-filter: blur(4px);
+        background: rgba(255, 255, 255, 0.1);
+        width: 300px;
+        height: 330px;
+        border-radius: 10px;
+        transition: all 0.3s ease-out;
+
+    }
+
+    .box:hover {
+        box-shadow: 2px 2px 2px 2px rgb(242, 254, 243);
+    }
+
+    h1 {
+        text-align: center;
+        font-weight: 800;
+        margin-top: 30px;
+        letter-spacing: 1px;
+        color: #908c8c;
+
+    }
+
+    .saman {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .saman input {
+        font-size: 20px;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        padding-left: 20px;
+    }
+
+    .saman input:focus {
+        outline: none;
+        border: 2px solid rgb(33, 98, 251);
+    }
+
+    input::placeholder {
+        font-size: 14px;
+        color: gray;
+    }
+
+    button {
+        font-size: 20px;
+        height: 40px;
+        text-align: center;
+        width: 265px;
+        border-radius: 10px;
+        cursor: pointer;
+        border: none;
+        transition: all 0.3s ease-out;
+        color: rgb(36, 34, 34);
+    }
+
+    button:hover {
+        transform: scale(1.02);
+        background-color: #fff;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .box {
+        width: 90vw;
+        height: auto;
+        padding-bottom: 25px;
+    }
+
+    .saman input,
+    button {
+        width: 80vw;
+    }
+}
