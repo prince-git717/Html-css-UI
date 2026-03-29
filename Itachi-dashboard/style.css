@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+
+}
+
+#main {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+    width: 100%;
+
+}
+
+#left {
+    height: fit-content;
+    width: 100%;
+    margin-top: 60px;
+    margin-left: 80px;
+    /* background-color: blue; */
+}
+
+#left h1 {
+    font-size: 100px;
+    font-family: "Playfair Display", serif;
+}
+
+#left-center {
+    /* background-color: teal; */
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    padding: 7px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 150px;
+
+}
+
+#left-center #color1 {
+    background-color: brown;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+#left-center #color2 {
+    background-color: rgb(188, 224, 46);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+#left h4 {
+    font-weight: 700;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+#left p {
+    font-size: 15px;
+    font-weight: 200;
+    width: 50%;
+}
+
+/* ab right wale ka kamm */
+#right {
+    width: 30vw;
+    height: 76vh;
+
+    margin-top: 150px;
+    margin-right: 200px;
+}
+#right #part1{
+    display: flex;
+    justify-content: space-between;  
+    font-size: 15px;
+}
+#right #part1 h5{
+    margin-right: 30px;
+}
+#right #part1 h4{
+    margin-left: 30px;
+}
+#right #part1 i{
+    color: goldenrod;
+}
+#part2{
+    overflow: hidden;
+}
+ #right #part2 img{
+    height: 80%;
+
+}
+#right img{
+    width: 100%;
+    height: 96%;
+    border-radius: 20px;
+}
+#gola{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(179, 38, 38);
+    border-radius: 50%;
+    position: absolute;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 270px;
+    left: 81%;
+}
+#right #rotated{
+    font-size: 30px;
+    rotate: -90deg;
+    position: absolute;
+    bottom: 110px;
+    right: 400px;
+}
+
+/* ── TABLET (max 1024px) ── */
+@media (max-width: 1024px) {
+    #left {
+        margin-left: 40px;
+    }
+
+    #left h1 {
+        font-size: 70px;
+    }
+
+    #left-center {
+        margin-top: 80px;
+    }
+
+    #left p {
+        width: 70%;
+    }
+
+    #right {
+        width: 40vw;
+        height: auto;
+        margin-top: 80px;
+        margin-right: 40px;
+    }
+
+    #gola {
+        width: 120px;
+        height: 120px;
+        font-size: 13px;
+        top: 220px;
+        left: 75%;
+    }
+
+    #right #rotated {
+        font-size: 22px;
+        right: 250px;
+        bottom: 80px;
+    }
+}
+
+
+/* ── MOBILE (max 768px) ── */
+@media (max-width: 768px) {
+    #main {
+        flex-direction: column;
+        min-height: auto;
+        padding-bottom: 60px;
+    }
+
+    #left {
+        margin: 30px 20px 0 20px;
+        width: auto;
+    }
+
+    #left h1 {
+        font-size: 52px;
+    }
+
+    #left-center {
+        margin-top: 40px;
+    }
+
+    #left p {
+        width: 100%;
+    }
+
+    #right {
+        width: 90%;
+        height: auto;
+        margin: 40px auto 0 auto;
+        position: relative;
+    }
+
+    #right img {
+        height: 350px;
+        object-fit: cover;
+    }
+
+    #gola {
+        width: 100px;
+        height: 100px;
+        font-size: 12px;
+        top: auto;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #right #rotated {
+        position: static;
+        rotate: 0deg;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
+
+/* ── SMALL MOBILE (max 480px) ── */
+@media (max-width: 480px) {
+    #left h1 {
+        font-size: 38px;
+    }
+
+    #right img {
+        height: 260px;
+    }
+
+    #right #part1 h4,
+    #right #part1 h5 {
+        margin: 0;
+        font-size: 13px;
+    }
+}
