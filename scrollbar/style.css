@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #141414; 
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.scroll-container {
+    background: #181818;
+    width: 26rem;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.scroll-container h2 {
+    color: #e50914; /* Netflix red */
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.scroll-div {
+    width: 100%;
+    height: 420px;
+    background: #222;
+    border-radius: 12px;
+    overflow-y: auto;
+    padding: 15px;
+    scrollbar-width: thin;
+    scrollbar-color: #e50914 #111;
+}
+
+/* Chrome scrollbar */
+.scroll-div::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll-div::-webkit-scrollbar-track {
+    background: #111;
+    border-radius: 10px;
+}
+
+.scroll-div::-webkit-scrollbar-thumb {
+    background: #e50914;
+    border-radius: 10px;
+}
+
+.scroll-div::-webkit-scrollbar-thumb:hover {
+    background: #f6121d;
+}
+
+.scroll-object {
+    background: #2a2a2a;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.scroll-object:hover {
+    background: #333;
+    transform: scale(1.03);
+}
